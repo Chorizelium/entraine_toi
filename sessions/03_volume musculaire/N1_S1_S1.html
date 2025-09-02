@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Niveau 1 — Semaine 1 — Séance 1</title>
+<style>
+
+
+
+  @page { size: A4; margin: 16mm; }
+  :root {
+    --orange:#f39c2d;
+    --orange-dark:#6b3b00;
+    --red:#e62828;
+    --red-dark:#5a0000;
+    --slot:#ececec;
+    --ink:#111;
+  }
+  * { box-sizing: border-box; }
+  body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--ink); line-height:1.45; }
+  .page{ page-break-after: always; }
+  h1{ font-size: 20px; margin:0 0 14px; }
+  .band{ display:block; padding:8px 12px; border-radius:4px; font-weight:800; letter-spacing:.2px; color:#fff; margin:18px 0 8px; text-transform:uppercase; }
+  .band.orange{ background: var(--orange); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .band.red{ background: var(--red); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .note-pre{ text-align:center; color: var(--red); font-weight:800; margin: 8px 0 0; }
+  .sub{ color:#b01b1b; font-style: italic; font-weight:700; margin: 6px 0 8px; }
+  .desc{ margin: 0 0 6px; }
+  .grid{ width:100%; border-collapse: collapse; margin: 4px 0 8px; }
+  .row{ display:grid; grid-template-columns: 56px 1fr 120px; align-items:center; gap:14px; padding:6px 0; border-bottom:1px solid #eee; }
+  .slot{ width:56px; height:28px; background:var(--slot); border-radius:6px; }
+  .exoname{ font-weight:800; text-transform:uppercase; }
+  .qty{ text-align:right; font-weight:700; white-space:nowrap; }
+  .meta{ margin:6px 0; font-weight:700; }
+  .meta em{ font-style:normal; color:#b01b1b; }
+  /* links styling for exercise names */
+  .exoname a { color:#000; text-decoration:none; }
+  .exoname a:hover { color:#e62828; }
+  @media print { .row{ border-bottom:1px solid #ddd; } }
+
+  /* --- Responsive tweaks --- */
+  @media (max-width: 900px) {
+    h1{ font-size: 18px; }
+    .row{ grid-template-columns: 52px 1fr 110px; gap:12px; padding:6px 0; }
+    .slot{ width:52px; height:26px; border-radius:6px; }
+    .qty{ font-size: 0.96rem; }
+  }
+  @media (max-width: 680px) {
+    body{ line-height:1.4; }
+    .band{ padding:8px 10px; margin:14px 0 6px; }
+    .desc{ margin: 0 0 4px; font-size: 0.95rem; }
+    .row{ grid-template-columns: 44px 1fr auto; gap:10px; padding:5px 0; }
+    .slot{ width:44px; height:24px; }
+    .exoname{ font-size: 0.98rem; }
+    .qty{ font-size: 0.95rem; }
+    .sub{ font-size: 0.95rem; }
+  }
+  @media (max-width: 480px) {
+    .page{ margin: 0; }
+    h1{ font-size: 16px; }
+    .band{ padding:7px 9px; font-size: 0.92rem; }
+    .row{ grid-template-columns: 36px 1fr auto; gap:8px; padding:4px 0; }
+    .slot{ width:36px; height:20px; border-radius:5px; }
+    .exoname{ font-weight: 800; text-transform: uppercase; word-break: break-word; }
+    .qty{ font-size: 0.9rem; }
+    .note-pre{ margin: 6px 0 0; }
+  }
+
+
+  .band.blue {
+    background: #5dade2; /* bleu clair */
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+/* Quand l’utilisateur est en mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+  .slot { background:#444; }
+}
+
+
+/* Mode clair (par défaut) */
+body {
+  background:#fff;
+  color:#000;
+}
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  body {
+    background:#000;
+    color:#e8eef6;
+  }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Light vs Dark background + text */
+body { background:#ffffff; color:#111; }
+@media (prefers-color-scheme: dark) {
+  body { background:#000000; color:#e8eef6; }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+
+  .rep-badge{
+    display:inline-flex; align-items:center; justify-content:center;
+    min-width:48px; padding:2px 6px; margin-left:8px;
+    background:#ececec; border-radius:6px; font-weight:800; font-size:0.9rem;
+  }
+  @media (prefers-color-scheme: dark){
+    .rep-badge{ background:#2a2f36; color:#e8eef6; }
+  }
+
+
+
+  .paren{ font-weight:400; text-transform:none; opacity:0.9; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="band blue">NIVEAU 1 — Semaine 1 — Séance 1</div>
+
+  <div class="band orange">Échauffement général</div>
+  <p class="desc">5 à 10 min d’activation cardio‑vasculaire générale</p>
+  <p class="desc">5 min de mobilisations articulaires au bâton</p>
+
+  <div class="band orange">Échauffement spécifique</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Wringing+the+Towel">WRINGING THE TOWEL</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Side+Plank+Clams">SIDE PLANK CLAMS</a><span class="paren"> (coude droit au sol)</span></div><div class="qty">x 12</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Mountain+Climber">MOUNTAIN CLIMBER</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Side+Plank+Clams">SIDE PLANK CLAMS</a><span class="paren"> (coude gauche au sol)</span></div><div class="qty">x 12</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Jumping+Jack">JUMPING JACK</a></div><div class="qty">x 30</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Superman+Plank+diagonal">SUPERMAN PLANK</a><span class="paren"> (choisir un côté de diagonale)</span></div><div class="qty">x 15 s</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Deck+Squat">DECK SQUAT</a></div><div class="qty">x 15</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Superman+Plank+diagonal">SUPERMAN PLANK</a><span class="paren"> (choisir l’autre côté de diagonale)</span></div><div class="qty">x 15 s</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Bear+Crawl">BEAR CRAWL</a></div><div class="qty">x 20 m</div></div>
+  </div>
+  <p class="note-pre">Effectuez 2 cycles</p>
+
+  <div class="band red">ATELIER 1 (Post-Fatigue)</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Regular+Push+Up">REGULAR PUSH UP</a></div><div class="qty">10 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Wall+Triceps+Press">WALL TRICEPS PRESS</a></div><div class="qty">15 x</div></div>
+  </div>
+  <p class="meta"><span>Séries : 4</span></p>
+  <p class="meta"><span>Récupération : 1,30 min</span></p>
+  <p class="desc"><strong>Notes :</strong> Les deux exercices seront réalisés sur le mode de la tension continue. Push Up : si besoin, et afin de permettre une parfaite réalisation technique, effectuez vos pompes avec les genoux au contact du sol.</p>
+
+  <div class="band red">ATELIER 2 (BI-SET AGONISTE)</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Lying+Back+Press">LYING BACK PRESS</a></div><div class="qty">20 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Arlaud+Movement">ARLAUD MOVEMENT</a><span class="paren"> (niveau 1)</span></div><div class="qty">15 x</div></div>
+  </div>
+  <p class="meta"><span>Séries : 4</span></p>
+  <p class="meta"><span>Récupération : 1,30 min</span></p>
+  <p class="desc"><strong>Notes :</strong> Les deux exercices seront réalisés sur le mode de la tension continue.</p>
+
+  <div class="band red">ATELIER 3 (EMOM 6 min)</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Burpee">BURPEE</a></div><div class="qty">5 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Reverse+Snow+Angel">REVERSE SNOW ANGEL</a></div><div class="qty">15 x</div></div>
+  </div>
+
+  <div class="band red">ATELIER 4 (RÉPÉTITIONS PARTIELLES)</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Yewkis">YEWKIS</a><span class="paren"> (selon votre niveau)</span></div><div class="qty">6 à 10 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Bouncing+Push+Up">BOUNCING PUSH UP</a><span class="paren"> (selon votre niveau)</span></div><div class="qty">10 à 15 x</div></div>
+  </div>
+  <p class="meta"><span>Séries : 4</span></p>
+<p class="meta"><span>Récupération : 1,30 min à 2 min</span></p>
+  <p class="desc"><strong>Note :</strong> Placez vos pieds sur un support pour soulager le poids du corps et aidez‑vous d’une légère poussée des jambes si besoin.</p>
+
+</section>
+
+</body>
+</html>

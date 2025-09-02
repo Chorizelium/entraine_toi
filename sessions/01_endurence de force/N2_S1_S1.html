@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Niveau 2 — Semaine 1 — Séance 1</title>
+<style>
+
+  @page { size: A4; margin: 16mm; }
+  :root {
+    --orange:#f39c2d;
+    --orange-dark:#6b3b00;
+    --red:#e62828;
+    --red-dark:#5a0000;
+    --slot:#ececec;
+    --ink:#111;
+  }
+  * { box-sizing: border-box; }
+  body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--ink); line-height:1.45; }
+  .page{ page-break-after: always; }
+  h1{ font-size: 20px; margin:0 0 14px; }
+  .band{ display:block; padding:8px 12px; border-radius:4px; font-weight:800; letter-spacing:.2px; color:#fff; margin:18px 0 8px; text-transform:uppercase; }
+  .band.orange{ background: var(--orange); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .band.red{ background: var(--red); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .note-pre{ text-align:center; color: var(--red); font-weight:800; margin: 8px 0 0; }
+  .sub{ color:#b01b1b; font-style: italic; font-weight:700; margin: 6px 0 8px; }
+  .desc{ margin: 0 0 6px; }
+  .grid{ width:100%; border-collapse: collapse; margin: 4px 0 8px; }
+  .row{ display:grid; grid-template-columns: 56px 1fr 120px; align-items:center; gap:14px; padding:6px 0; border-bottom:1px solid #eee; }
+  .slot{ width:56px; height:28px; background:var(--slot); border-radius:6px; }
+  .exoname{ font-weight:800; text-transform:uppercase; }
+  .qty{ text-align:right; font-weight:700; white-space:nowrap; }
+  .meta{ margin:6px 0; font-weight:700; }
+  .meta em{ font-style:normal; color:#b01b1b; }
+  /* links styling for exercise names */
+  .exoname a { color:#000; text-decoration:none; }
+  .exoname a:hover { color:#e62828; }
+  @media print { .row{ border-bottom:1px solid #ddd; } }
+
+  /* --- Responsive tweaks --- */
+  @media (max-width: 900px) {
+    h1{ font-size: 18px; }
+    .row{ grid-template-columns: 52px 1fr 110px; gap:12px; padding:6px 0; }
+    .slot{ width:52px; height:26px; border-radius:6px; }
+    .qty{ font-size: 0.96rem; }
+  }
+  @media (max-width: 680px) {
+    body{ line-height:1.4; }
+    .band{ padding:8px 10px; margin:14px 0 6px; }
+    .desc{ margin: 0 0 4px; font-size: 0.95rem; }
+    .row{ grid-template-columns: 44px 1fr auto; gap:10px; padding:5px 0; }
+    .slot{ width:44px; height:24px; }
+    .exoname{ font-size: 0.98rem; }
+    .qty{ font-size: 0.95rem; }
+    .sub{ font-size: 0.95rem; }
+  }
+  @media (max-width: 480px) {
+    .page{ margin: 0; }
+    h1{ font-size: 16px; }
+    .band{ padding:7px 9px; font-size: 0.92rem; }
+    .row{ grid-template-columns: 36px 1fr auto; gap:8px; padding:4px 0; }
+    .slot{ width:36px; height:20px; border-radius:5px; }
+    .exoname{ font-weight: 800; text-transform: uppercase; word-break: break-word; }
+    .qty{ font-size: 0.9rem; }
+    .note-pre{ margin: 6px 0 0; }
+  }
+
+
+  .band.blue {
+    background: #5dade2; /* bleu clair */
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+/* Quand l’utilisateur est en mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+  .slot { background:#444; }
+}
+
+
+/* Mode clair (par défaut) */
+body {
+  background:#fff;
+  color:#000;
+}
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  body {
+    background:#000;
+    color:#e8eef6;
+  }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Light vs Dark background + text */
+body { background:#ffffff; color:#111; }
+@media (prefers-color-scheme: dark) {
+  body { background:#000000; color:#e8eef6; }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="band blue">NIVEAU 2 — Semaine 1 — Séance 1</div>
+
+  <div class="band orange">Échauffement général</div>
+  <p class="desc">5 à 10 min d’activation cardio‑vasculaire générale</p>
+  <p class="desc">5 min de mobilisations articulaires au bâton</p>
+
+  <div class="band orange">Échauffement spécifique</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Overhead+Pogo+Jump">Overhead Pogo Jump</a></div><div class="qty">x 30</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Good+Morning+exercise">Good Morning</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Circular+Plank+core">Circular Plank (10 droite/10 gauche)</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Shin+Box+Tripod+Extension">Shin Box Tripod Extension</a></div><div class="qty">x 12</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Candlestick+Roll+to+Bear+Walk">Candlestick Roll to Bear Walk</a></div><div class="qty">x 5<br/>10 mètres</div></div>
+  </div>
+  <p class="note-pre">Effectuez 2 cycles</p>
+
+  <div class="band red">Entraînement pyramidal</div>
+  <p class="sub">2 montées + 1 descente</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Side+Box+Jump">Side Box Jump</a></div><div class="qty">6 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Classic+Burpee">Classic Burpee</a></div><div class="qty">12 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Beast+Unload">Beast Unload</a></div><div class="qty">18 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Pseudo+Planche+Push+Up">Pseudo Planche<br/>Push Up</a></div><div class="qty">25 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Kneeling+Squat">Kneeling Squat</a></div><div class="qty">32 x</div></div>
+  </div>
+
+  <div class="band red">Condensation graduelle (AMRAP)</div>
+  <p class="sub">Temps de travail = 15 min</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Scorpion+Push+Up">Scorpion Push Up</a></div><div class="qty">10 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Classic+Burpee">Classic Burpee</a></div><div class="qty">5 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Strike+Squat+Box+Jump">Strike Squat Box Jump</a></div><div class="qty">3 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Clap+Pull+Up">Clap Pull Up</a></div><div class="qty">1 x</div></div>
+  </div>
+
+  <div class="band red">HIIT</div>
+  <p class="sub">20/20 : 2 x 8 cycles (10,40 min)</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Wall+Drives+exercise">Wall Drives</a></div><div class="qty">8 cycles</div></div>
+  </div>
+  <p class="note-pre">Repos = 2 min</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=Rocking+Horse+Push+Up">Rocking Horse Push Up</a></div><div class="qty">8 cycles</div></div>
+  </div>
+</section>
+
+</body>
+</html>

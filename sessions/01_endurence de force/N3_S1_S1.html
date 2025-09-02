@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Niveau 3 — Semaine 1 — Séance 1</title>
+<style>
+
+  @page { size: A4; margin: 16mm; }
+  :root {
+    --orange:#f39c2d;
+    --orange-dark:#6b3b00;
+    --red:#e62828;
+    --red-dark:#5a0000;
+    --slot:#ececec;
+    --ink:#111;
+  }
+  * { box-sizing: border-box; }
+  body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--ink); line-height:1.45; }
+  .page{ page-break-after: always; }
+  h1{ font-size: 20px; margin:0 0 14px; }
+  .band{ display:block; padding:8px 12px; border-radius:4px; font-weight:800; letter-spacing:.2px; color:#fff; margin:18px 0 8px; text-transform:uppercase; }
+  .band.orange{ background: var(--orange); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .band.red{ background: var(--red); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .note-pre{ text-align:center; color: var(--red); font-weight:800; margin: 8px 0 0; }
+  .sub{ color:#b01b1b; font-style: italic; font-weight:700; margin: 6px 0 8px; }
+  .desc{ margin: 0 0 6px; }
+  .grid{ width:100%; border-collapse: collapse; margin: 4px 0 8px; }
+  .row{ display:grid; grid-template-columns: 56px 1fr 120px; align-items:center; gap:14px; padding:6px 0; border-bottom:1px solid #eee; }
+  .slot{ width:56px; height:28px; background:var(--slot); border-radius:6px; }
+  .exoname{ font-weight:800; text-transform:uppercase; }
+  .qty{ text-align:right; font-weight:700; white-space:nowrap; }
+  .meta{ margin:6px 0; font-weight:700; }
+  .meta em{ font-style:normal; color:#b01b1b; }
+  /* links styling for exercise names */
+  .exoname a { color:#000; text-decoration:none; }
+  .exoname a:hover { color:#e62828; }
+  @media print { .row{ border-bottom:1px solid #ddd; } }
+
+  /* --- Responsive tweaks --- */
+  @media (max-width: 900px) {
+    h1{ font-size: 18px; }
+    .row{ grid-template-columns: 52px 1fr 110px; gap:12px; padding:6px 0; }
+    .slot{ width:52px; height:26px; border-radius:6px; }
+    .qty{ font-size: 0.96rem; }
+  }
+  @media (max-width: 680px) {
+    body{ line-height:1.4; }
+    .band{ padding:8px 10px; margin:14px 0 6px; }
+    .desc{ margin: 0 0 4px; font-size: 0.95rem; }
+    .row{ grid-template-columns: 44px 1fr auto; gap:10px; padding:5px 0; }
+    .slot{ width:44px; height:24px; }
+    .exoname{ font-size: 0.98rem; }
+    .qty{ font-size: 0.95rem; }
+    .sub{ font-size: 0.95rem; }
+  }
+  @media (max-width: 480px) {
+    .page{ margin: 0; }
+    h1{ font-size: 16px; }
+    .band{ padding:7px 9px; font-size: 0.92rem; }
+    .row{ grid-template-columns: 36px 1fr auto; gap:8px; padding:4px 0; }
+    .slot{ width:36px; height:20px; border-radius:5px; }
+    .exoname{ font-weight: 800; text-transform: uppercase; word-break: break-word; }
+    .qty{ font-size: 0.9rem; }
+    .note-pre{ margin: 6px 0 0; }
+  }
+
+
+  .band.blue {
+    background: #5dade2; /* bleu clair */
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+/* Quand l’utilisateur est en mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+  .slot { background:#444; }
+}
+
+
+/* Mode clair (par défaut) */
+body {
+  background:#fff;
+  color:#000;
+}
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  body {
+    background:#000;
+    color:#e8eef6;
+  }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Light vs Dark background + text */
+body { background:#ffffff; color:#111; }
+@media (prefers-color-scheme: dark) {
+  body { background:#000000; color:#e8eef6; }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="band blue">NIVEAU 3 — Semaine 1 — Séance 1</div>
+
+  <div class="band orange">Échauffement général</div>
+  <p class="desc">5 à 10 min d’activation cardio‑vasculaire générale</p>
+  <p class="desc">5 min de mobilisations articulaires au bâton</p>
+
+  <div class="band orange">Échauffement spécifique</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Baby+Rock+exercise" target="_blank">BABY ROCK</a></div><div class="qty">x 12</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=A+Skip+drill" target="_blank">A SKIP</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Good+Morning+exercise" target="_blank">GOOD MORNING</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Bridge+Raise+glutes" target="_blank">BRIDGE RAISE</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Beast+Unload+exercise" target="_blank">BEAST UNLOAD</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Basic+to+Hand+Plank" target="_blank">BASIC TO HAND PLANK</a></div><div class="qty">x 12</div></div>
+  </div>
+  <p class="note-pre">Effectuez 2 cycles</p>
+
+  <div class="band red">Entraînement pyramidal</div>
+  <p class="sub">2 montées + 2 descentes</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Candlestick+Roll+to+Tuck+Jump" target="_blank">CANDLESTICK ROLL TO TUCK JUMP</a></div><div class="qty">10 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Sprinter+Sit+Up" target="_blank">SPRINTER SIT UP</a></div><div class="qty">20 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Wide+Push+Up+feet+elevated" target="_blank">WIDE PUSH UP (Feet Elevated)</a></div><div class="qty">30 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Bench+Jump" target="_blank">BENCH JUMP</a></div><div class="qty">40 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=90+Degree+Jumping+Jack" target="_blank">90 DEGREE JUMPING JACK</a></div><div class="qty">50 x</div></div>
+  </div>
+
+  <div class="band red">Condensation graduelle (AMRAP)</div>
+  <p class="sub">Temps de travail = 20 min</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Star+Jumps" target="_blank">STAR JUMPS</a></div><div class="qty">10 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Pistol+Squat" target="_blank">PISTOL SQUAT</a></div><div class="qty">5 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Deficit+Handstand+Push+Up" target="_blank">DEFICIT HANDSTAND PUSH UP</a></div><div class="qty">3 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Muscle+Up" target="_blank">MUSCLE UP</a></div><div class="qty">1 x</div></div>
+  </div>
+
+  <div class="band red">HIIT</div>
+  <p class="sub">30/15 : 2 x 8 cycles (12 min)</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=Stand+Up+to+Side+Box+Jump" target="_blank">STAND UP TO SIDE BOX JUMP</a></div><div class="qty">8 cycles</div></div>
+  </div>
+  <p class="note-pre">Repos = 1,30 min</p>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a href="https://www.youtube.com/results?search_query=One+Leg+Burpee+to+C+Skip" target="_blank">ONE LEG BURPEE TO C SKIP</a></div><div class="qty">8 cycles</div></div>
+  </div>
+</section>
+
+</body>
+</html>
