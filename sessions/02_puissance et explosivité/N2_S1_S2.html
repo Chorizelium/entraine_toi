@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chapitre 2 — Niveau 2 — Semaine 1 — Séance 2</title>
+<style>
+
+
+  @page { size: A4; margin: 16mm; }
+  :root {
+    --orange:#f39c2d;
+    --orange-dark:#6b3b00;
+    --red:#e62828;
+    --red-dark:#5a0000;
+    --slot:#ececec;
+    --ink:#111;
+  }
+  * { box-sizing: border-box; }
+  body{ font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif; color: var(--ink); line-height:1.45; }
+  .page{ page-break-after: always; }
+  h1{ font-size: 20px; margin:0 0 14px; }
+  .band{ display:block; padding:8px 12px; border-radius:4px; font-weight:800; letter-spacing:.2px; color:#fff; margin:18px 0 8px; text-transform:uppercase; }
+  .band.orange{ background: var(--orange); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .band.red{ background: var(--red); box-shadow: inset 0 -2px 0 rgba(0,0,0,.15); }
+  .note-pre{ text-align:center; color: var(--red); font-weight:800; margin: 8px 0 0; }
+  .sub{ color:#b01b1b; font-style: italic; font-weight:700; margin: 6px 0 8px; }
+  .desc{ margin: 0 0 6px; }
+  .grid{ width:100%; border-collapse: collapse; margin: 4px 0 8px; }
+  .row{ display:grid; grid-template-columns: 56px 1fr 120px; align-items:center; gap:14px; padding:6px 0; border-bottom:1px solid #eee; }
+  .slot{ width:56px; height:28px; background:var(--slot); border-radius:6px; }
+  .exoname{ font-weight:800; text-transform:uppercase; }
+  .qty{ text-align:right; font-weight:700; white-space:nowrap; }
+  .meta{ margin:6px 0; font-weight:700; }
+  .meta em{ font-style:normal; color:#b01b1b; }
+  /* links styling for exercise names */
+  .exoname a { color:#000; text-decoration:none; }
+  .exoname a:hover { color:#e62828; }
+  @media print { .row{ border-bottom:1px solid #ddd; } }
+
+  /* --- Responsive tweaks --- */
+  @media (max-width: 900px) {
+    h1{ font-size: 18px; }
+    .row{ grid-template-columns: 52px 1fr 110px; gap:12px; padding:6px 0; }
+    .slot{ width:52px; height:26px; border-radius:6px; }
+    .qty{ font-size: 0.96rem; }
+  }
+  @media (max-width: 680px) {
+    body{ line-height:1.4; }
+    .band{ padding:8px 10px; margin:14px 0 6px; }
+    .desc{ margin: 0 0 4px; font-size: 0.95rem; }
+    .row{ grid-template-columns: 44px 1fr auto; gap:10px; padding:5px 0; }
+    .slot{ width:44px; height:24px; }
+    .exoname{ font-size: 0.98rem; }
+    .qty{ font-size: 0.95rem; }
+    .sub{ font-size: 0.95rem; }
+  }
+  @media (max-width: 480px) {
+    .page{ margin: 0; }
+    h1{ font-size: 16px; }
+    .band{ padding:7px 9px; font-size: 0.92rem; }
+    .row{ grid-template-columns: 36px 1fr auto; gap:8px; padding:4px 0; }
+    .slot{ width:36px; height:20px; border-radius:5px; }
+    .exoname{ font-weight: 800; text-transform: uppercase; word-break: break-word; }
+    .qty{ font-size: 0.9rem; }
+    .note-pre{ margin: 6px 0 0; }
+  }
+
+
+  .band.blue {
+    background: #5dade2; /* bleu clair */
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+/* Quand l’utilisateur est en mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+  .slot { background:#444; }
+}
+
+
+/* Mode clair (par défaut) */
+body {
+  background:#fff;
+  color:#000;
+}
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  body {
+    background:#000;
+    color:#e8eef6;
+  }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+/* Light vs Dark background + text */
+body { background:#ffffff; color:#111; }
+@media (prefers-color-scheme: dark) {
+  body { background:#000000; color:#e8eef6; }
+  .slot { background:#444; }
+  .exoname a { color:#fff; }
+  .exoname a:hover { color:#e62828; }
+}
+
+
+
+  .connector{ font-weight:400; text-transform:lowercase; margin:0 6px; }
+
+  .paren{ font-weight:400; text-transform:none; opacity:0.9; }
+
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="band blue">NIVEAU 2 — Semaine 1 — Séance 2</div>
+
+  <div class="band orange">Échauffement général</div>
+  <p class="desc">5 à 10 min d’activation cardio‑vasculaire générale</p>
+  <p class="desc">5 min de mobilisations articulaires au bâton</p>
+
+  <div class="band orange">Échauffement spécifique</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=DUCK+UNDER+SQUAT">DUCK UNDER SQUAT</a><span class="connector">to</span><a target="_blank" href="https://www.youtube.com/results?search_query=HALF+BURPEE">HALF BURPEE</a></div><div class="qty">x 6</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=BEAR+CRAWL">BEAR CRAWL</a></div><div class="qty">x 10 m</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=HIP+TWIST">HIP TWIST</a></div><div class="qty">x 20</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=CIRCULAR+PLANK">CIRCULAR PLANK</a></div><div class="qty">x 10</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=UNDERSWITCH">UNDERSWITCH</a></div><div class="qty">x 10</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=90+DEGREE+JUMPING+JACK">90 DEGREE JUMPING JACK</a></div><div class="qty">x 20</div></div>
+  </div>
+  <p class="note-pre">Effectuez 3 cycles</p>
+
+  <div class="band red">ATELIER 1</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=ASSISTED+ROLLING+PLANCHE+PUSH+UP">ASSISTED ROLLING PLANCHE PUSH UP</a></div><div class="qty">10 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=UNDERSWITCH">UNDERSWITCH</a><span class="connector">to</span><a target="_blank" href="https://www.youtube.com/results?search_query=CRAB+REACH">CRAB REACH</a></div><div class="qty">12 x</div></div>
+  </div>
+  <p class="meta"><span>Séries : 5</span></p>
+  <p class="meta"><span>Récupération : 1,30 min</span></p>
+
+  <div class="band red">ATELIER 2</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=HEADSTAND">HEADSTAND</a><span class="connector">to</span><a target="_blank" href="https://www.youtube.com/results?search_query=OLYMPIC+PRESS">OLYMPIC PRESS</a><span class="connector">to</span><a target="_blank" href="https://www.youtube.com/results?search_query=SQUAT+JUMP">SQUAT JUMP</a></div><div class="qty">5 x</div></div>
+  </div>
+  <p class="meta"><span>Répétitions : 20 à 30</span> — <span>Série : 1</span></p>
+  <p class="meta"><span>Récupération : le moins possible !</span></p>
+  <p class="desc"><strong>Notes :</strong> Il s’agit bien d’un enchaînement de 3 exercices à réaliser le plus parfaitement possible. Amortissez la descente de Olympic Press en gardant le dos bien droit, puis, à l’inverse, poussez très fort (tout en restant gainé) le sol pour vous projeter en position accroupie de Squat et effectuez dans la foulée un saut vertical le plus intense possible. Réitérez une vingtaine de fois sans contrainte de temps.</p>
+
+  <div class="band red">ATELIER 3</div>
+  <div class="grid">
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=ASSISTED+ONE+ARM+PUSH+UP">ASSISTED ONE ARM PUSH UP</a><span class="paren"> (6 à droite + 6 à gauche)</span></div><div class="qty">12 x</div></div>
+    <div class="row"><div class="slot"></div><div class="exoname"><a target="_blank" href="https://www.youtube.com/results?search_query=ROLL+OVER">ROLL OVER</a><span class="connector">to</span><a target="_blank" href="https://www.youtube.com/results?search_query=BOX+JUMP">BOX JUMP</a></div><div class="qty">6 x</div></div>
+  </div>
+  <p class="meta"><span>Séries : 5</span></p>
+  <p class="meta"><span>Récupération : 1,30 min</span></p>
+  <p class="desc"><strong>Note :</strong> Assisted One Arm Push Up : descente lente et contrôlée et remontée plus rapide.</p>
+  <p class="desc"><strong>Roll Over :</strong> la position en gainage dite en banane sera maintenue 5 secondes à chaque répétition.</p>
+
+</section>
+
+</body>
+</html>
